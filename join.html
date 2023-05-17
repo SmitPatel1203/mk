@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header id="home">
+
+    <nav id="navbar">
+      <div class="left_img">
+        <img src="mk_foundation_img/mk.png" width="200px">
+      </div>
+      <div class="lr">
+        <ul class="right">
+          <li>
+            <span class="btn"><a href="index.html">Home</a></span>
+          </li>
+          <li>
+            <span class="btn"><a href="donation.html">Donations</a></span>
+          </li>
+          <li>
+            <span class="btn active"><a href="join.html">Join</a></span>
+          </li>
+          <li>
+            <span class="btn"><a href="contect.html">Contact Us</a></span>
+          </li>
+        </ul>
+      </div>
+      <br>
+    </nav>
+  </header>
+  <div id="join">
+
+    <div class="hed">
+      <p>Join Now</p>
+      <img src="mk_foundation_img\user_join.png">
+    </div>
+
+
+    <div id="login">
+
+      <form onsubmit="return false">
+
+        <div class="datils">
+          <div class=card_join>
+            <p>Full Name:</p>
+          </div>
+          <div class="text_box">
+            <input type="text" id="Fullname" name="fullname" placeholder="Enter Fullname">
+            <span class="error" id="fnameError"></span>
+          </div>
+        </div>
+
+
+        <div class="datils">
+          <div class="card_join">
+            <p>Email Adress:</p>
+          </div>
+          <div class="text_box">
+            <input type="email" id="Email" name="email" placeholder="Enter Email">
+          <span class="error" id="emailError"></span>
+          </div>
+        </div>
+
+
+        <div class="datils">
+          <div class="card_join">
+            <p>Number:</p>
+          </div>
+          <div class="text_box">
+            <input type="number" id="Number" name="number" placeholder="Enter Number">
+          <span class="error" id="numberError"></span>
+          </div>
+        </div>
+
+        <div class="datils">
+          <div class="card_join">
+            <p>City:</p>
+          </div>
+          <div class="text_box">
+            <input type="text" id="City" name="city" placeholder="Enter City">
+          <span class="error" id="cityError"></span>
+          </div>
+        </div>
+
+        <div class="submit_text">
+          <input type="submit" name="" value="Login" id="submit" onclick="replaceFunction()">
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+
+  <table id="table">
+    <thead>
+      <th>Fullname</th>
+      <th>Email</th>
+      <th>Number</th>
+      <th>City</th>
+      <th>Action</th>
+    </thead>
+    <tbody id="tableBody">
+    </tbody>
+  </table>
+  <script src="submit.js"></script>
+
+</body>
+
+</html>
